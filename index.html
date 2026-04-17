@@ -6,15 +6,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Luxurious Personal Web Portfolio</title>
       
-      <!-- Favicon for browser tab -->
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+      <!-- Favicon with cache busting (version query string) -->
+      <!-- Standard favicon for modern browsers -->
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=2" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=2" />
       
-      <!-- Apple Touch Icon for iOS home screen -->
-      <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+      <!-- Shortcut icon for older browsers (IE compatibility) -->
+      <link rel="shortcut icon" href="/favicon.png?v=2" type="image/png" />
       
-      <!-- Theme color for browser chrome -->
+      <!-- Apple Touch Icon for iOS home screen (iPhone/iPad) -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png?v=2" />
+      
+      <!-- Android Chrome theme color (matches dark theme) -->
       <meta name="theme-color" content="#0a0a0f" />
+      
+      <!-- Preload favicon to reduce layout shift and ensure priority loading -->
+      <link rel="preload" href="/favicon.png?v=2" as="image" />
     </head>
 
     <body>
