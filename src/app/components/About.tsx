@@ -49,7 +49,7 @@ export function About() {
                 />
 
                 <img
-                  src="https://via.placeholder.com/400x500/1a1a2e/8b5cf6?text=Professional+Photo+Here"
+                  src="/favicon.png"
                   alt="Professional Profile"
                   className="w-full h-full object-cover"
                 />
